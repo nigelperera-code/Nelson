@@ -1,81 +1,181 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>For Owners — Nelson Lord</title>
-  <meta name="description" content="A discreet, professional process that protects your people and your legacy.">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For owners | Nelson Lord</title>
+  <meta name="description" content="For owners: a discreet, respectful process that protects your people, your customers, and your legacy." />
+  <meta name="theme-color" content="#0b1623" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" href="assets/team.jpg" as="image" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="container">
-    <div class="nav">
-      <a class="brand" href="/"><div class="brand-mark">NL</div><div class="brand-name">NELSON LORD</div></a>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a class="active" href="/owners.html">For owners</a>
-        <a href="/advisors.html">For advisors</a>
-        <a href="/confidentiality.html">Confidentiality</a>
-        <a href="/contact.html">Contact</a>
-      </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header header--solid" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Nelson Lord home">
+        <img src="assets/logo.svg" alt="Nelson Lord" class="brand__mark" />
+        <span class="brand__text">
+          <span class="brand__name">Nelson Lord</span>
+          <span class="brand__sub">Partners</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__icon" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link nav__link--active" href="owners.html">For owners</a>
+          <a class="nav__link" href="process.html">Confidentiality</a>
+          <a class="nav__link" href="advisors.html">For advisors</a>
+          <a class="nav__link" href="privacy.html">Privacy</a>
+          <a class="nav__link nav__link--pill" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <div class="hero">
-      <div class="kicker">For owners</div>
-      <div class="h1">A discreet process that protects your people and your reputation.</div>
-      <div class="sub">
-        If you’re considering your next chapter — now or in the next couple of years — we’ll keep things calm, private, and straightforward.
+  <main id="main">
+    <section class="pageHero">
+      <div class="container grid grid--2">
+        <div class="stack reveal">
+          <p class="eyebrow">For owners</p>
+          <h1 class="h1">A discreet process that protects your people and your legacy.</h1>
+          <p class="lead">
+            Most owners who speak to us want three things: discretion, fairness, and continuity.
+            We understand why.
+          </p>
+          <div class="cta">
+            <a class="btn btn--primary" href="index.html#contact">Confidential 15-minute call</a>
+            <a class="btn btn--ghost" href="process.html">Confidentiality approach</a>
+          </div>
+
+          <div class="panel reveal">
+            <div class="badge">What you can expect</div>
+            <ul class="ticks">
+              <li>We keep it quiet and controlled</li>
+              <li>We do not contact staff without your approval</li>
+              <li>We do not create diligence chaos</li>
+              <li>We are clear and direct about fit</li>
+              <li>We plan transitions so the business stays steady</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="imagePanel reveal">
+          <img src="assets/team.jpg" alt="Calm professional team setting" />
+          <div class="imagePanel__overlay"></div>
+          <div class="imagePanel__copy">
+            <div class="badge">Owners care about this</div>
+            <p class="imagePanel__text">Will my team be ok?</p>
+            <p class="imagePanel__sub muted">We treat that as central, not secondary.</p>
+          </div>
+        </div>
       </div>
-      <div class="cta-row">
-        <a class="btn primary" href="/contact.html">Request a confidential 15-minute call</a>
-        <a class="btn" href="tel:+447309690039">07309 690 039</a>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="panel reveal">
+          <div class="badge">The first call</div>
+          <h2 class="h2">15 minutes. Owner-only. Calm and straightforward.</h2>
+          <p class="muted">
+            We keep the first conversation simple. No interrogation.
+            We will ask about your goals, your timing, what the business does, and what matters to you.
+          </p>
+          <ul class="ticks">
+            <li>Your goals and timing</li>
+            <li>What makes the business special</li>
+            <li>What you want protected</li>
+            <li>Whether there is a fit</li>
+          </ul>
+        </div>
+
+        <div class="panel reveal">
+          <div class="badge">What happens after</div>
+          <h2 class="h2">In most cases, not much changes.</h2>
+          <p class="muted">
+            We focus on continuity first. We protect what already works.
+            Where helpful, we add structure and support so the business does not rely on one person.
+          </p>
+          <ul class="ticks">
+            <li>Keep the team steady</li>
+            <li>Support managers and supervisors</li>
+            <li>Improve visibility only where it helps delivery</li>
+            <li>Keep customer relationships protected</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="grid two">
-      <div class="card">
-        <h3>Why owners speak to us</h3>
-        <ul class="bullets">
-          <li>You want discretion and a quiet process</li>
-          <li>You care about staff and long-standing customers</li>
-          <li>You want a straightforward buyer, not a timewaster</li>
-          <li>You’d like flexibility on timing and handover</li>
-        </ul>
+    <section class="section section--tint">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="h2">What we tend to like</h2>
+          <p class="muted">
+            We are open-minded on sector. We care about the shape of the business.
+          </p>
+        </div>
+
+        <div class="cards cards--3">
+          <div class="card reveal">
+            <div class="card__body">
+              <h3 class="h3">Repeat demand</h3>
+              <p class="muted">Customers come back, and the work is needed.</p>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="card__body">
+              <h3 class="h3">A team that delivers</h3>
+              <p class="muted">The service is not held together by one person.</p>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="card__body">
+              <h3 class="h3">A good name</h3>
+              <p class="muted">Reputation built through consistency and pride.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="soft reveal">
+          <div class="soft__inner">
+            <div>
+              <div class="badge">A final note</div>
+              <p class="soft__title">If it is not for us, we will say so quickly.</p>
+              <p class="muted">We respect your time and we keep it straightforward.</p>
+            </div>
+            <a class="btn btn--primary" href="index.html#contact">Start confidentially</a>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>What the first call looks like</h3>
-        <ul class="bullets">
-          <li>Your goals and timing</li>
-          <li>What the business does and what you’re proud of</li>
-          <li>Whether we may be a fit</li>
-          <li>Agree the next step — or stop</li>
-        </ul>
-        <p class="note" style="margin-top:10px">No interrogation. No pressure. No obligation.</p>
+    </section>
+
+    <footer class="footer footer--mini">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <p class="footer__brand">Nelson Lord Partners</p>
+          <p class="footer__muted">Long-term stewardship for established service businesses.</p>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="index.html">Home</a>
+          <a class="footer__link" href="process.html">Confidentiality</a>
+          <a class="footer__link" href="advisors.html">For advisors</a>
+          <a class="footer__link" href="privacy.html">Privacy</a>
+        </div>
       </div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="card">
-      <h3>If we’re a fit, what we’ll ask for next</h3>
-      <ul class="bullets">
-        <li>Recent accounts (2–3 years)</li>
-        <li>Recent management numbers (if available)</li>
-        <li>High-level customer mix (no names needed initially)</li>
-        <li>A simple overview of the team and how work is delivered</li>
-      </ul>
-      <p class="note" style="margin-top:10px">We keep requests proportionate — and we don’t create disruption.</p>
-    </div>
-
-    <div class="footer">
-      <div class="hr"></div>
-      <div class="footer-row">
-        <div>© <span id="y"></span> Nelson Lord</div>
-        <div><a href="mailto:info@nelsonlord.co.uk">info@nelsonlord.co.uk</a> · <a href="tel:+447309690039">07309 690 039</a></div>
+      <div class="container footer__bottom">
+        <p class="footer__muted">© <span id="year"></span> Nelson Lord.</p>
       </div>
-    </div>
-  </div>
+    </footer>
+  </main>
 
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script src="script.js"></script>
 </body>
 </html>
