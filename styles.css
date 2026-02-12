@@ -1,119 +1,217 @@
-<!doctype html>
-<html lang="en-GB">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Confidentiality | Nelson Lord</title>
-  <meta name="description" content="Confidentiality is non-negotiable. How we keep discussions private, controlled, and respectful." />
-  <meta name="theme-color" content="#0f1720" />
-  <link rel="icon" href="assets/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+:root{
+  --bg:#fbfbf9;
+  --paper:#ffffff;
+  --ink:#111214;
+  --muted:#5a616a;
+  --line:rgba(17,18,20,.10);
+  --soft:rgba(17,18,20,.04);
+  --accent:#9b7b3a;      /* warm gold */
+  --accent2:#0f2a3a;     /* deep slate for contrast */
+  --radius:20px;
+  --shadow:0 18px 55px rgba(17,18,20,.08);
+}
 
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+/* Base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink)}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.92}
+img{max-width:100%;display:block}
 
-  <header class="top top--solid">
-    <div class="wrap top__inner">
-      <a class="brand" href="index.html" aria-label="Nelson Lord home">
-        <img src="assets/logo.svg" alt="Nelson Lord" class="brand__mark" />
-        <span class="brand__word">
-          <span class="brand__name">Nelson Lord</span>
-          <span class="brand__sub">Long-term owners</span>
-        </span>
-      </a>
+/* Layout */
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+.section{padding:84px 0}
+.section.tight{padding:58px 0}
+.hr{height:1px;background:var(--line)}
+.small{font-size:13px;color:var(--muted);line-height:1.6}
+.kicker{
+  font-size:12px; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--accent); margin-bottom:14px;
+}
 
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__link" href="owners.html">For owners</a>
-        <a class="nav__link nav__link--active" href="confidentiality.html">Confidentiality</a>
-        <a class="nav__link" href="privacy.html">Privacy</a>
-        <a class="nav__link nav__link--cta" href="index.html#contact">Contact</a>
-      </nav>
+/* Type */
+.h1{
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight:500;
+  font-size:56px;
+  line-height:1.03;
+  letter-spacing:-.02em;
+  margin:0;
+}
+.h2{
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-weight:500;
+  font-size:34px;
+  line-height:1.12;
+  letter-spacing:-.01em;
+  margin:0 0 10px;
+}
+.lead{
+  font-size:18px; line-height:1.75; color:var(--muted);
+  max-width:760px; margin-top:18px;
+}
+.p{color:var(--muted);line-height:1.75;margin:0}
+@media (max-width:880px){
+  .h1{font-size:40px}
+  .h2{font-size:28px}
+  .section{padding:64px 0}
+}
 
-      <button class="menu" type="button" aria-expanded="false" aria-controls="menuPanel">
-        <span class="menu__lines" aria-hidden="true"></span>
-        <span class="sr">Menu</span>
-      </button>
-    </div>
+/* Nav */
+.nav-wrap{
+  position:sticky; top:0; z-index:50;
+  background:rgba(251,251,249,.85);
+  backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:18px 0; gap:18px;
+}
+.brand{
+  display:flex; align-items:center; gap:12px;
+  letter-spacing:.12em; text-transform:uppercase;
+  font-size:12px;
+}
+.mark{
+  width:38px;height:38px;border-radius:12px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  display:grid;place-items:center;
+  font-weight:600; color:var(--accent2);
+}
+.links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+.links a{font-size:13px;color:var(--muted)}
+.links a.active{color:var(--ink)}
+@media (max-width:720px){
+  .links{gap:12px}
+}
 
-    <div class="menuPanel" id="menuPanel" hidden>
-      <div class="wrap menuPanel__inner">
-        <a class="menuPanel__link" href="owners.html">For owners</a>
-        <a class="menuPanel__link" href="confidentiality.html">Confidentiality</a>
-        <a class="menuPanel__link" href="privacy.html">Privacy</a>
-        <a class="menuPanel__link" href="index.html#contact">Contact</a>
-      </div>
-    </div>
-  </header>
+/* Buttons */
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:12px 16px;border-radius:999px;
+  border:1px solid var(--line);
+  background:transparent;
+  font-size:14px;
+}
+.btn.primary{
+  background:var(--accent2);
+  border-color:var(--accent2);
+  color:#fff;
+}
+.btn.ghost{
+  background:rgba(255,255,255,.65);
+}
+.btn:hover{transform:translateY(-1px);transition:120ms ease}
 
-  <main id="main">
-    <section class="pageHero">
-      <div class="wrap">
-        <p class="kicker">Confidentiality</p>
-        <h1 class="h1">Confidentiality is non-negotiable.</h1>
-        <p class="lead">
-          We understand how sensitive this can be.
-          We keep conversations private and controlled.
-          Nothing moves without your agreement.
-        </p>
-      </div>
-    </section>
+/* Hero (image-led) */
+.hero{
+  padding:70px 0 42px;
+}
+.hero-grid{
+  display:grid; gap:28px;
+  grid-template-columns: 1.1fr .9fr;
+  align-items:stretch;
+}
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+}
+.hero-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.hero-media{
+  height:100%;
+  min-height:420px;
+  background:#ddd center/cover no-repeat;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid var(--line);
+}
+@media (max-width:980px){
+  .hero-media{min-height:320px}
+}
+.hero-inner{padding:42px}
+.hero-meta{
+  display:flex;gap:10px;flex-wrap:wrap;
+  margin-top:18px;color:var(--muted);font-size:13px;
+}
+.pill{
+  padding:7px 12px;border-radius:999px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.7);
+}
 
-    <section class="section">
-      <div class="wrap">
-        <div class="grid grid--2">
-          <div class="card">
-            <h2 class="h2">Our commitments</h2>
-            <ul class="list">
-              <li>No contact with staff, customers, or suppliers without your approval</li>
-              <li>No sharing information beyond what is appropriate</li>
-              <li>Specialists involved only when needed</li>
-              <li>Calm, proportionate steps</li>
-              <li>Minimal disruption</li>
-            </ul>
-          </div>
+/* Editorial blocks */
+.grid-2{display:grid;gap:22px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{display:grid;gap:18px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px;
+}
+.card.soft{background:rgba(255,255,255,.65)}
+.card h3{
+  margin:0 0 10px;
+  font-size:14px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted);
+}
+.list{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.75}
+.list li{margin:8px 0}
+.quote{
+  background:linear-gradient(180deg, rgba(155,123,58,.10), rgba(255,255,255,.0));
+  border:1px solid rgba(155,123,58,.22);
+  border-radius:var(--radius);
+  padding:22px;
+}
+.quote p{margin:0;color:var(--ink);line-height:1.6;font-size:16px}
+.quote small{display:block;margin-top:10px;color:var(--muted)}
 
-          <div class="card">
-            <h2 class="h2">A simple process</h2>
-            <ol class="olist">
-              <li><strong>First call</strong> to understand timing and fit</li>
-              <li><strong>Light review</strong> only if there is genuine fit</li>
-              <li><strong>Second conversation</strong> to talk properly and plan the transition</li>
-              <li><strong>Confirm and complete</strong> with care and control</li>
-            </ol>
-            <p class="small">We keep it proportionate. We avoid unnecessary heaviness.</p>
-          </div>
-        </div>
+/* Image sections */
+.split{
+  display:grid; gap:22px;
+  grid-template-columns: 1fr 1fr;
+  align-items:center;
+}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.img-frame{
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.img-frame img{width:100%;height:520px;object-fit:cover}
+@media (max-width:900px){.img-frame img{height:340px}}
 
-        <div class="banner">
-          <div class="banner__left">
-            <div class="banner__k">Owner-first</div>
-            <div class="banner__t">This stays owner-led and controlled.</div>
-            <div class="banner__d">No surprises. No games. No noise.</div>
-          </div>
-          <a class="btn btn--primary" href="index.html#contact">Start confidentially</a>
-        </div>
-      </div>
-    </section>
+/* Forms */
+.form{display:grid;gap:12px;margin-top:6px}
+.label{font-size:13px;color:var(--muted)}
+.input{
+  width:100%;
+  padding:13px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:15px;
+}
+textarea.input{min-height:130px;resize:vertical}
 
-    <footer class="footer" aria-label="Footer">
-      <div class="wrap footer__inner">
-        <div class="footer__left">
-          <div class="footer__brand">Nelson Lord</div>
-          <div class="footer__sub">A long-term home for established service businesses.</div>
-        </div>
-        <div class="footer__right">
-          <a href="index.html">Home</a>
-          <a href="owners.html">For owners</a>
-          <a href="privacy.html">Privacy</a>
-        </div>
-      </div>
-      <div class="wrap footer__bottom">
-        <div>© <span id="year"></span> Nelson Lord.</div>
-      </div>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-</html>
+/* Footer */
+.footer{
+  padding:54px 0;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+}
+.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer a{color:var(--ink)}
