@@ -1,92 +1,59 @@
 // Mobile menu
-const toggle = document.querySelector(".nav__toggle");
-const menu = document.querySelector("#navMenu");
+const btn = document.querySelector(".menu");
+const panel = document.getElementById("menuPanel");
 
-if (toggle && menu) {
-  toggle.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("is-open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
+if (btn && panel) {
+  btn.addEventListener("click", () => {
+    const isOpen = panel.hasAttribute("hidden") === false;
+    if (isOpen) {
+      panel.setAttribute("hidden", "");
+      btn.setAttribute("aria-expanded", "false");
+    } else {
+      panel.removeAttribute("hidden");
+      btn.setAttribute("aria-expanded", "true");
+    }
   });
 
-  menu.querySelectorAll("a").forEach(a => {
+  panel.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", () => {
-      menu.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
+      panel.setAttribute("hidden", "");
+      btn.setAttribute("aria-expanded", "false");
     });
   });
 }
 
-// Reveal on scroll
-const revealEls = document.querySelectorAll(".reveal");
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add("is-visible");
-  });
-}, { threshold: 0.12 });
-revealEls.forEach(el => io.observe(el));
+// Footer year
+document.querySelectorAll("#year").forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
 
-// Year + privacy date
-const yearEl = document.getElementById("year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+// Formspree AJAX
+document.querySelectorAll(".js-form").forEach((form) => {
+  const okId = form.getAttribute("data-success");
+  const errId = form.getAttribute("data-error");
+  const ok = okId ? document.getElementById(okId) : null;
+  const err = errId ? document.getElementById(errId) : null;
 
-const todayEl = document.getElementById("today");
-if (todayEl) {
-  const d = new Date();
-  const opts = { year: "numeric", month: "long", day: "numeric" };
-  todayEl.textContent = d.toLocaleDateString("en-GB", opts);
-}
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (ok) ok.hidden = true;
+    if (err) err.hidden = true;
 
-// Formspree AJAX handling
-async function postForm(form) {
-  const url = form.getAttribute("action");
-  const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
 
-  const res = await fetch(url, {
-    method: "POST",
-    body: data,
-    headers: { "Accept": "application/json" }
-  });
-
-  if (!res.ok) throw new Error("Form submission failed");
-  return res.json();
-}
-
-function wireAjaxForms() {
-  const forms = document.querySelectorAll(".js-ajaxForm");
-  forms.forEach(form => {
-    const successId = form.dataset.success;
-    const errorId = form.dataset.error;
-    const success = successId ? document.getElementById(successId) : null;
-    const error = errorId ? document.getElementById(errorId) : null;
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      if (success) success.hidden = true;
-      if (error) error.hidden = true;
-
-      const btn = form.querySelector("button[type='submit']");
-      const oldText = btn ? btn.innerText : "";
-      if (btn) {
-        btn.disabled = true;
-        btn.style.opacity = "0.85";
-        btn.innerText = "Sending…";
-      }
-
-      try {
-        await postForm(form);
+      if (res.ok) {
         form.reset();
-        if (success) success.hidden = false;
-      } catch (err) {
-        if (error) error.hidden = false;
-      } finally {
-        if (btn) {
-          btn.disabled = false;
-          btn.style.opacity = "";
-          btn.innerText = oldText;
-        }
+        if (ok) ok.hidden = false;
+      } else {
+        if (err) err.hidden = false;
       }
-    });
+    } catch (ex) {
+      if (err) err.hidden = false;
+    }
   });
-}
-
-wireAjaxForms();
+});
