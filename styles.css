@@ -1,69 +1,146 @@
-:root{
-  --bg:#0b0f14;
-  --card:#0f1620;
-  --text:#e8eef6;
-  --muted:#aab6c5;
-  --line:rgba(255,255,255,.10);
-  --accent:#d7c59a; /* warm, premium */
-}
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy | Nelson Lord</title>
+  <meta name="description" content="A plain-English privacy notice. We keep your information private, controlled, and used only for sensible reasons." />
+  <meta name="theme-color" content="#0b1623" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;}
-a{color:inherit;text-decoration:none}
-a:hover{opacity:.92}
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-.container{max-width:1060px;margin:0 auto;padding:28px 18px}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.brand-mark{width:38px;height:38px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;color:var(--accent);font-weight:600;letter-spacing:.5px}
-.brand-name{font-weight:600;letter-spacing:.6px}
-.nav-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
-.nav-links a{color:var(--muted);font-size:14px}
-.nav-links a.active{color:var(--text)}
-.btn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);padding:12px 14px;border-radius:14px;color:var(--text);background:transparent}
-.btn.primary{border-color:rgba(215,197,154,.35);background:rgba(215,197,154,.08)}
-.btn.small{padding:10px 12px;border-radius:12px;font-size:14px}
+  <header class="header header--solid" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Nelson Lord home">
+        <img src="assets/logo.svg" alt="Nelson Lord" class="brand__mark" />
+        <span class="brand__text">
+          <span class="brand__name">Nelson Lord</span>
+          <span class="brand__sub">Partners</span>
+        </span>
+      </a>
 
-.hero{padding:54px 0 26px}
-.kicker{color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
-.h1{font-size:44px;line-height:1.1;margin:14px 0 12px;letter-spacing:-.02em}
-.sub{color:var(--muted);font-size:18px;line-height:1.6;max-width:760px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__icon" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
 
-.grid{display:grid;gap:14px}
-.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
-.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
-@media (max-width:860px){.grid.two,.grid.three{grid-template-columns:1fr}.h1{font-size:36px}}
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="owners.html">For owners</a>
+          <a class="nav__link" href="process.html">Confidentiality</a>
+          <a class="nav__link" href="advisors.html">For advisors</a>
+          <a class="nav__link nav__link--active" href="privacy.html">Privacy</a>
+          <a class="nav__link nav__link--pill" href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
-.card h3{margin:0 0 8px;font-size:16px}
-.card p{margin:0;color:var(--muted);line-height:1.6}
+  <main id="main">
+    <section class="pageHero">
+      <div class="container">
+        <p class="eyebrow">Privacy</p>
+        <h1 class="h1">Privacy, in plain English.</h1>
+        <p class="lead">
+          We keep your information private and controlled.
+          We use it only for sensible reasons, and we do not sell it.
+        </p>
+      </div>
+    </section>
 
-.hr{height:1px;background:var(--line);margin:22px 0}
-.section-title{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
-.h2{font-size:24px;margin:0 0 10px}
-.bullets{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.65}
-.bullets li{margin:6px 0}
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="panel reveal">
+          <div class="badge">What we collect</div>
+          <ul class="ticks">
+            <li>Your name and contact details</li>
+            <li>Information you choose to share about your business</li>
+            <li>Basic technical data like browser type and page visits</li>
+          </ul>
+          <p class="muted">
+            We only collect what we need to respond properly.
+          </p>
+        </div>
 
-.quote{border-left:3px solid rgba(215,197,154,.45);padding:10px 14px;color:var(--text);background:rgba(255,255,255,.03);border-radius:12px}
-.quote small{display:block;color:var(--muted);margin-top:6px}
+        <div class="panel reveal">
+          <div class="badge">How we use it</div>
+          <ul class="ticks">
+            <li>To reply to your enquiry</li>
+            <li>To arrange a call or meeting</li>
+            <li>To keep a private record of conversations</li>
+            <li>To improve the website experience</li>
+          </ul>
+          <p class="muted">
+            We do not use your information for spam or unwanted marketing.
+          </p>
+        </div>
+      </div>
+    </section>
 
-.footer{padding:24px 0 34px;color:var(--muted);font-size:14px}
-.footer a{color:var(--text)}
-.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    <section class="section section--tint">
+      <div class="container grid grid--2">
+        <div class="panel reveal">
+          <div class="badge">Who we share it with</div>
+          <p class="muted">
+            We keep sharing to a minimum. Sometimes, we may share information with trusted professionals who help us operate,
+            such as legal or accounting support, but only when it is appropriate and on a need-to-know basis.
+          </p>
+          <p class="muted">
+            We do not sell your information. We do not share it with advertisers.
+          </p>
+        </div>
 
-.hero-img{
-  border:1px solid var(--line);
-  border-radius:22px;
-  overflow:hidden;
-  height:320px;
-  background:linear-gradient(135deg, rgba(215,197,154,.15), rgba(255,255,255,.02));
-  display:grid;place-items:center;
-}
-.hero-img span{color:rgba(232,238,246,.55);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+        <div class="panel reveal">
+          <div class="badge">Your rights</div>
+          <ul class="ticks">
+            <li>You can ask what information we hold about you</li>
+            <li>You can ask us to correct it</li>
+            <li>You can ask us to delete it where appropriate</li>
+            <li>You can ask us to stop using it in certain ways</li>
+          </ul>
+          <p class="muted">
+            If you want to do any of this, email <a class="inline" href="mailto:info@nelsonlord.co.uk">info@nelsonlord.co.uk</a>.
+          </p>
+        </div>
+      </div>
 
-.form{display:grid;gap:10px}
-.input{width:100%;padding:12px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02);color:var(--text)}
-textarea.input{min-height:120px;resize:vertical}
-.label{font-size:13px;color:var(--muted)}
-.note{font-size:13px;color:var(--muted);line-height:1.6}
+      <div class="container">
+        <div class="soft reveal">
+          <div class="soft__inner">
+            <div>
+              <div class="badge">A simple promise</div>
+              <p class="soft__title">We treat your information like we would want ours treated.</p>
+              <p class="muted">Private, controlled, and used only for the right reasons.</p>
+            </div>
+            <a class="btn btn--primary" href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer footer--mini">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <p class="footer__brand">Nelson Lord Partners</p>
+          <p class="footer__muted">Long-term stewardship for established service businesses.</p>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="index.html">Home</a>
+          <a class="footer__link" href="owners.html">For owners</a>
+          <a class="footer__link" href="process.html">Confidentiality</a>
+          <a class="footer__link" href="advisors.html">For advisors</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p class="footer__muted">© <span id="year"></span> Nelson Lord.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
