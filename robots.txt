@@ -1,2 +1,5 @@
 User-agent: *
+Allow: /
+Sitemap: https://nelsonlord.co.uk/sitemap.xml
+
 Disallow: /brokers/
