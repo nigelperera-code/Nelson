@@ -4,8 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nelson Lord | A long-term home for established service businesses</title>
-  <meta name="description" content="Nelson Lord is a long-term home for established UK service businesses where standards matter. Discreet conversations, continuity, and practical support." />
-  <meta name="theme-color" content="#0b1623" />
+  <meta name="description" content="Nelson Lord is a long-term home for established UK service businesses. Discreet conversations, fair behaviour, and continuity for people and customers." />
+  <meta name="theme-color" content="#0f1720" />
+
   <link rel="icon" href="assets/favicon.png" />
   <link rel="preload" href="assets/hero.jpg" as="image" />
   <link rel="stylesheet" href="styles.css" />
@@ -14,357 +15,274 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <div class="announce" role="status" aria-live="polite">
-    <div class="container announce__inner">
-      <div class="announce__dot" aria-hidden="true"></div>
-      <p class="announce__text">
-        We are building a UK group of compliance-led service businesses, with a calm, discreet approach.
-      </p>
-      <a class="announce__link" href="#contact">Start confidentially</a>
-    </div>
-  </div>
-
-  <header class="header" id="top">
-    <div class="container header__inner">
+  <header class="top">
+    <div class="wrap top__inner">
       <a class="brand" href="index.html" aria-label="Nelson Lord home">
         <img src="assets/logo.svg" alt="Nelson Lord" class="brand__mark" />
-        <span class="brand__text">
+        <span class="brand__word">
           <span class="brand__name">Nelson Lord</span>
-          <span class="brand__sub">Partners</span>
+          <span class="brand__sub">Long-term owners</span>
         </span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav__icon" aria-hidden="true"></span>
-          <span class="sr-only">Open menu</span>
-        </button>
-
-        <div class="nav__menu" id="navMenu">
-          <a class="nav__link" href="owners.html">For owners</a>
-          <a class="nav__link" href="process.html">Confidentiality</a>
-          <a class="nav__link" href="advisors.html">For advisors</a>
-          <a class="nav__link" href="privacy.html">Privacy</a>
-          <a class="nav__link nav__link--pill" href="#contact">Contact</a>
-        </div>
+        <a class="nav__link" href="owners.html">For owners</a>
+        <a class="nav__link" href="confidentiality.html">Confidentiality</a>
+        <a class="nav__link" href="privacy.html">Privacy</a>
+        <a class="nav__link nav__link--cta" href="#contact">Contact</a>
       </nav>
+
+      <button class="menu" type="button" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu__lines" aria-hidden="true"></span>
+        <span class="sr">Menu</span>
+      </button>
+    </div>
+
+    <div class="menuPanel" id="menuPanel" hidden>
+      <div class="wrap menuPanel__inner">
+        <a class="menuPanel__link" href="owners.html">For owners</a>
+        <a class="menuPanel__link" href="confidentiality.html">Confidentiality</a>
+        <a class="menuPanel__link" href="privacy.html">Privacy</a>
+        <a class="menuPanel__link" href="#contact">Contact</a>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero" aria-label="Hero">
-      <div class="hero__media" aria-hidden="true">
-        <img src="assets/hero.jpg" alt="" />
-        <div class="hero__overlay"></div>
-        <div class="hero__grain"></div>
-      </div>
-
-      <div class="container hero__inner">
-        <div class="hero__content reveal">
-          <p class="eyebrow">Long-term stewardship • UK • Standards-led</p>
-          <h1 class="h1">
-            A long-term home for established service businesses.
-          </h1>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">UK</p>
+          <h1 class="h1">A long-term home for established service businesses.</h1>
           <p class="lead">
-            If you have spent years building something solid, with loyal customers, a dependable team, and a reputation you are proud of,
-            we would welcome a quiet conversation.
-            We keep things discreet, practical, and respectful.
+            If you have spent years building something solid, with loyal customers, a dependable team,
+            and a reputation you are proud of, we would like to have a quiet conversation.
           </p>
 
           <div class="cta">
-            <a class="btn btn--primary" href="#contact">Confidential 15-minute call</a>
-            <a class="btn btn--ghost" href="process.html">How we keep it discreet</a>
+            <a class="btn btn--primary" href="#contact">Request a confidential 15-minute call</a>
+            <a class="btn btn--ghost" href="owners.html">What owners can expect</a>
           </div>
 
-          <div class="hero__chips" role="list" aria-label="Highlights">
-            <div class="chip" role="listitem">
-              <div class="chip__title">Discretion first</div>
-              <div class="chip__text">No staff or customer contact without your approval</div>
+          <div class="micro">
+            <div class="micro__item">
+              <div class="micro__t">Discreet</div>
+              <div class="micro__d">No noise. No unnecessary disruption.</div>
             </div>
-            <div class="chip" role="listitem">
-              <div class="chip__title">Continuity</div>
-              <div class="chip__text">Protect the team and the culture that made it work</div>
+            <div class="micro__item">
+              <div class="micro__t">Fair</div>
+              <div class="micro__d">Straight behaviour and clear next steps.</div>
             </div>
-            <div class="chip" role="listitem">
-              <div class="chip__title">Practical support</div>
-              <div class="chip__text">People, operations, systems, and reporting when helpful</div>
+            <div class="micro__item">
+              <div class="micro__t">Continuity</div>
+              <div class="micro__d">People and customers matter.</div>
             </div>
           </div>
         </div>
 
-        <aside class="heroCard reveal" aria-label="Fit in 60 seconds">
-          <div class="badge">Fit in 60 seconds</div>
-          <h2 class="h2">Is this you?</h2>
-
-          <ul class="ticks">
-            <li>Customers come back year after year</li>
-            <li>You have a team that delivers the work well</li>
-            <li>Demand is steady and the business generates healthy cash</li>
-            <li>Standards and duty of care matter in your world</li>
-            <li>You are thinking about succession in the next couple of years</li>
-          </ul>
-
-          <p class="fine">
-            If that is broadly true, it is worth a conversation. No obligation. No pressure.
-          </p>
-
-          <a class="textlink" href="owners.html">What owners can expect →</a>
-        </aside>
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/hero.jpg" alt="" />
+          <div class="hero__overlay"></div>
+        </div>
       </div>
     </section>
 
-    <!-- MOSAIC -->
+    <!-- STATEMENT -->
+    <section class="statement">
+      <div class="wrap statement__inner">
+        <p class="quote">
+          We are long-term owners. We are not brokers. We are not flippers. We do not create noise.
+        </p>
+        <p class="quoteSub">
+          We aim to be calm, respectful, and easy to deal with.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT MATTERS -->
     <section class="section">
-      <div class="container grid grid--2">
-        <div class="stack reveal">
-          <h2 class="h2">Good people. Calm execution.</h2>
-          <p class="muted">
-            Owners often care as much about people, reputation, and continuity as they do about the deal itself.
-            We take that seriously.
-            We aim to be safe to speak to and easy to deal with.
-          </p>
-
-          <div class="quote reveal">
-            <p class="quote__text">We keep standards high, and keep the process human.</p>
-            <p class="quote__meta">How we try to show up</p>
-          </div>
-
-          <div class="callouts">
-            <div class="callout reveal">
-              <h3 class="h3">For owners</h3>
-              <p class="muted">Discreet conversation. Clear next steps. No drama.</p>
-              <a class="textlink" href="owners.html">Read the owner page →</a>
-            </div>
-            <div class="callout reveal">
-              <h3 class="h3">For advisors</h3>
-              <p class="muted">A tidy process and a credible counterpart.</p>
-              <a class="textlink" href="advisors.html">Read the advisor page →</a>
-            </div>
-          </div>
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">What matters to us</p>
+          <h2 class="h2">Simple, on purpose.</h2>
         </div>
 
-        <div class="mosaic reveal" aria-label="Image mosaic">
-          <img src="assets/mosaic-1.jpg" alt="Quiet planning meeting" class="mosaic__a" />
-          <img src="assets/mosaic-2.jpg" alt="Technician at work in a plantroom" class="mosaic__b" />
-          <img src="assets/mosaic-3.jpg" alt="Quality and documentation checks" class="mosaic__c" />
-          <div class="mosaic__card">
-            <div class="badge">What matters in our world</div>
-            <ul class="ticks ticks--compact">
-              <li>Consistency</li>
-              <li>Evidence</li>
-              <li>Clear responsibilities</li>
-              <li>Pride in delivery</li>
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">A business built over time</h3>
+            <p class="p">
+              Customers come back. The work genuinely matters to the people who buy it.
+              Standards are taken seriously. The team takes pride in delivery.
+            </p>
+            <ul class="list">
+              <li>Repeat customers and steady demand</li>
+              <li>A dependable team in place</li>
+              <li>A good name in the market</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Healthy, sustainable cash</h3>
+            <p class="p">
+              We like businesses that are financially sound without being obsessed with finance.
+              In plain terms, sensible profits that genuinely turn into cash.
+            </p>
+            <ul class="list">
+              <li>Sensible, sustainable profitability</li>
+              <li>Clear record-keeping</li>
+              <li>Not dependent on constant marketing</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS TEASER -->
-    <section class="section section--tint">
-      <div class="container grid grid--2">
-        <div class="panel reveal">
-          <div class="badge">Confidentiality and process</div>
-          <h2 class="h2">A calm, controlled way of doing this.</h2>
-          <p class="muted">
-            This can be sensitive. We keep things private and controlled.
-            We do not contact staff, customers, or suppliers without your approval.
-            We do not create unnecessary disruption.
-          </p>
+    <!-- EDITORIAL STRIP -->
+    <section class="editorial">
+      <div class="wrap editorial__grid">
+        <figure class="shot">
+          <img src="assets/editorial-1.jpg" alt="Quiet planning meeting" />
+          <figcaption>Quiet, thoughtful decisions.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/editorial-2.jpg" alt="Hands reviewing paperwork" />
+          <figcaption>Care for detail, without drama.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/editorial-3.jpg" alt="Calm team environment" />
+          <figcaption>People-first continuity.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-          <div class="steps">
-            <div class="step reveal">
-              <div class="step__n">1</div>
-              <div>
-                <div class="step__t">Confidential 15-minute call</div>
-                <div class="step__d">Fit, priorities, and whether it is worth a second conversation</div>
-              </div>
-            </div>
-            <div class="step reveal">
-              <div class="step__n">2</div>
-              <div>
-                <div class="step__t">Light review</div>
-                <div class="step__d">Accounts and a few basics, only if there is genuine fit</div>
-              </div>
-            </div>
-            <div class="step reveal">
-              <div class="step__n">3</div>
-              <div>
-                <div class="step__t">Plan the transition</div>
-                <div class="step__d">Keep the team steady and protect customer relationships</div>
-              </div>
-            </div>
-          </div>
-
-          <a class="btn btn--ghost" href="process.html">Read the full confidentiality approach</a>
+    <!-- WHY OWNERS CHOOSE US -->
+    <section class="section section--soft">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">Why owners choose us</p>
+          <h2 class="h2">Discretion. Fairness. Continuity.</h2>
         </div>
 
-        <div class="imagePanel reveal">
-          <img src="assets/process.jpg" alt="Orderly operations planning" />
-          <div class="imagePanel__overlay"></div>
-          <div class="imagePanel__copy">
-            <div class="badge">Owners tell us this matters</div>
-            <p class="imagePanel__text">
-              “Will you keep it quiet and look after my people?”
-            </p>
-            <p class="imagePanel__sub muted">
-              That is the question we take most seriously.
+        <div class="grid grid--3">
+          <div class="pill">
+            <h3 class="h3">Discretion</h3>
+            <p class="p">
+              We do not contact staff, customers, or suppliers without your say-so.
+              Conversations stay private and controlled.
             </p>
           </div>
+
+          <div class="pill">
+            <h3 class="h3">Fairness</h3>
+            <p class="p">
+              If it is not right, we will say so quickly.
+              If it is right, we keep it calm and straightforward.
+            </p>
+          </div>
+
+          <div class="pill">
+            <h3 class="h3">Continuity</h3>
+            <p class="p">
+              We protect what you built. The team stays steady. Customers stay looked after.
+              Change is only introduced where it genuinely helps.
+            </p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="split__left">
+            <h3 class="h3">What happens after a transition</h3>
+            <p class="p">
+              Owners often ask what will change. In most cases, not much.
+              We strengthen what already works.
+            </p>
+            <ul class="list">
+              <li>Keep the team in place</li>
+              <li>Protect the culture</li>
+              <li>Look after long-standing customers</li>
+              <li>Introduce clearer structure where helpful</li>
+              <li>Support managers so the business does not rely on one person</li>
+            </ul>
+          </div>
+
+          <div class="split__right">
+            <div class="photoCard" aria-label="Founders">
+              <img src="assets/founders.jpg" alt="Nigel Perera and John Ray" />
+              <div class="photoCard__cap">
+                <div class="photoCard__name">Nigel Perera and John Ray</div>
+                <div class="photoCard__role">Managing Partners</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="miniCta">
+          <a class="btn btn--primary" href="confidentiality.html">Read our confidentiality promise</a>
+          <a class="btn btn--ghost" href="owners.html">Owner page</a>
         </div>
       </div>
     </section>
 
-    <!-- FOCUS -->
+    <!-- ABOUT -->
     <section class="section">
-      <div class="container">
-        <div class="sectionHead reveal">
-          <h2 class="h2">Where we are spending time right now</h2>
-          <p class="muted">
-            We are open-minded on sector. Today, we spend most of our time in service areas where standards and duty of care are part of daily delivery.
-          </p>
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">About us</p>
+          <h2 class="h2">Good people, long-term view.</h2>
         </div>
 
-        <div class="cards cards--2">
-          <article class="card reveal">
-            <img src="assets/focus-water.jpg" alt="Water systems and compliance context" class="card__img" />
-            <div class="card__body">
-              <h3 class="h3">Water hygiene and compliance</h3>
-              <p class="muted">
-                Established providers with repeat demand, strong delivery culture, and pride in doing things properly.
-              </p>
-              <div class="pillrow" aria-label="Themes">
-                <span class="pill">Repeat demand</span>
-                <span class="pill">Clear standards</span>
-                <span class="pill">Trusted delivery</span>
-              </div>
-              <a class="textlink" href="owners.html">What this means for owners →</a>
-            </div>
-          </article>
-
-          <article class="card reveal">
-            <img src="assets/focus-cold.jpg" alt="Commercial refrigeration service context" class="card__img" />
-            <div class="card__body">
-              <h3 class="h3">Commercial refrigeration</h3>
-              <p class="muted">
-                Service and maintenance businesses where reliability, responsiveness, and professionalism drive long-term relationships.
-              </p>
-              <div class="pillrow" aria-label="Themes">
-                <span class="pill">Reliability</span>
-                <span class="pill">Responsiveness</span>
-                <span class="pill">Professional standards</span>
-              </div>
-              <a class="textlink" href="owners.html">What owners can expect →</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="soft reveal">
-          <div class="soft__inner">
-            <div>
-              <div class="badge">In any sector</div>
-              <p class="soft__title">We look for the shape of a good business.</p>
-              <p class="muted">
-                Repeat customers. A team that delivers. Predictable demand. Sensible profits that genuinely turn into cash.
-                A reputation built over time.
-              </p>
-            </div>
-            <a class="btn btn--primary" href="#contact">Start confidentially</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEAM -->
-    <section class="section section--tint">
-      <div class="container grid grid--2">
-        <div class="panel reveal">
-          <div class="badge">Leadership</div>
-          <h2 class="h2">Hands-on partners, with quiet capability behind the scenes.</h2>
-
-          <div class="bio">
+        <div class="grid grid--2">
+          <div class="card">
             <h3 class="h3">Nigel Perera</h3>
-            <p class="muted">
-              Former Ernst and Young, with a career spanning wealth management and property.
-              Nigel has led regulated operations where proper standards and day-to-day delivery go hand in hand.
-              Owners value his calm approach and straightforward decision-making.
+            <p class="p">
+              Nigel is former Ernst and Young, with experience across wealth management and property.
+              He values clarity, steady progress, and straightforward decision-making.
+              Owners appreciate that he listens carefully and moves at a sensible pace.
             </p>
           </div>
 
-          <div class="bio">
+          <div class="card">
             <h3 class="h3">John Ray</h3>
-            <p class="muted">
-              Background in property and wealth management.
-              John focuses on continuity and support during transition, helping teams feel steady,
-              and ensuring the business continues to run smoothly as an owner steps back.
+            <p class="p">
+              John has a background in property and wealth management.
+              His focus is people, structure, and continuity.
+              His priority is making sure teams feel supported during a transition and that the business continues to run smoothly once an owner steps back.
             </p>
-          </div>
-
-          <div class="miniRow">
-            <div class="mini reveal">
-              <div class="mini__t">Supported when needed</div>
-              <div class="mini__d muted">Accounting, legal, HR, operations, and systems</div>
-            </div>
-            <div class="mini reveal">
-              <div class="mini__t">Always proportionate</div>
-              <div class="mini__d muted">No theatre, just sensible support</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portrait reveal">
-          <img src="assets/founders.jpg" alt="Founders image placeholder" />
-          <div class="portrait__cap">
-            <div>
-              <div class="portrait__name">Nigel Perera and John Ray</div>
-              <div class="portrait__role muted">Managing Partners</div>
-            </div>
-            <a class="textlink" href="owners.html">Owner page →</a>
-          </div>
-
-          <div class="portrait__below reveal">
-            <img src="assets/team.jpg" alt="Calm professional team setting" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container grid grid--2">
-        <div class="stack reveal">
-          <div class="badge">Contact</div>
+    <section class="contact" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <p class="eyebrow">Get in touch</p>
           <h2 class="h2">A quiet 15-minute call.</h2>
-          <p class="muted">
-            No pressure. No interrogation. No obligation.
-            Just a straightforward discussion about where you are now, what you are thinking about, and whether it makes sense to talk again.
+          <p class="p">
+            No interrogation. No pressure. No obligation.
+            Just a straightforward discussion about where you are now, what you are thinking about, and whether we might be a fit.
           </p>
 
-          <div class="contactCard reveal">
-            <div class="contactCard__row">
-              <div>
-                <div class="contactCard__t">Email</div>
-                <a class="contactCard__v" href="mailto:info@nelsonlord.co.uk">info@nelsonlord.co.uk</a>
-              </div>
-              <div>
-                <div class="contactCard__t">Phone</div>
-                <a class="contactCard__v" href="tel:+447309690039">07309 690 039</a>
-              </div>
+          <div class="contact__notes">
+            <div class="note">
+              <div class="note__t">Confidentiality</div>
+              <div class="note__d">Nothing leaves the room without your agreement.</div>
             </div>
-            <p class="fine muted">
-              We treat all enquiries in confidence.
-            </p>
+            <div class="note">
+              <div class="note__t">If we are not right</div>
+              <div class="note__d">We will tell you honestly and promptly.</div>
+            </div>
           </div>
 
-          <p class="fine muted">
-            Prefer to read first? See our <a class="inline" href="process.html">confidentiality approach</a>.
+          <p class="small">
+            Prefer email? <a class="link" href="mailto:info@nelsonlord.co.uk">info@nelsonlord.co.uk</a>
           </p>
         </div>
 
-        <div class="panel reveal" aria-label="Contact form">
-          <div class="badge">Send a message</div>
-          <form class="form js-form" action="https://formspree.io/f/xzddndwl" method="POST" data-success="contactSuccess" data-error="contactError">
+        <div class="formCard" aria-label="Contact form">
+          <form class="form js-form" action="https://formspree.io/f/xzddndwl" method="POST" data-success="ok" data-error="err">
             <input type="hidden" name="_subject" value="Nelson Lord | Website enquiry" />
             <input type="hidden" name="form_type" value="Website Contact" />
 
@@ -385,15 +303,15 @@
 
             <button class="btn btn--primary" type="submit">Send</button>
 
-            <p class="fine muted">
-              By sending, you agree to our <a class="inline" href="privacy.html">privacy notice</a>.
+            <p class="small">
+              By sending, you agree to our <a class="link" href="privacy.html">privacy notice</a>.
             </p>
           </form>
 
-          <div class="formState formState--ok" id="contactSuccess" hidden>
+          <div class="formState formState--ok" id="ok" hidden>
             <strong>Received.</strong> We will reply soon.
           </div>
-          <div class="formState formState--err" id="contactError" hidden>
+          <div class="formState formState--err" id="err" hidden>
             <strong>Something went wrong.</strong> Please email us instead.
           </div>
         </div>
@@ -401,22 +319,19 @@
     </section>
 
     <footer class="footer" aria-label="Footer">
-      <div class="container footer__inner">
+      <div class="wrap footer__inner">
         <div class="footer__left">
-          <p class="footer__brand">Nelson Lord Partners</p>
-          <p class="footer__muted">Long-term stewardship for established service businesses.</p>
+          <div class="footer__brand">Nelson Lord</div>
+          <div class="footer__sub">A long-term home for established service businesses.</div>
         </div>
-
         <div class="footer__right">
-          <a class="footer__link" href="owners.html">For owners</a>
-          <a class="footer__link" href="process.html">Confidentiality</a>
-          <a class="footer__link" href="advisors.html">For advisors</a>
-          <a class="footer__link" href="privacy.html">Privacy</a>
+          <a href="owners.html">For owners</a>
+          <a href="confidentiality.html">Confidentiality</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
-
-      <div class="container footer__bottom">
-        <p class="footer__muted">© <span id="year"></span> Nelson Lord. All rights reserved.</p>
+      <div class="wrap footer__bottom">
+        <div>© <span id="year"></span> Nelson Lord. All rights reserved.</div>
       </div>
     </footer>
   </main>
