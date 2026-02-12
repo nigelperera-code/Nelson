@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy | Nelson Lord</title>
-  <meta name="description" content="A plain-English privacy notice. We keep your information private, controlled, and used only for sensible reasons." />
-  <meta name="theme-color" content="#0b1623" />
+  <title>Confidentiality | Nelson Lord</title>
+  <meta name="description" content="Confidentiality is non-negotiable. How we keep discussions private, controlled, and respectful." />
+  <meta name="theme-color" content="#0f1720" />
   <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -13,130 +13,103 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="header header--solid" id="top">
-    <div class="container header__inner">
+  <header class="top top--solid">
+    <div class="wrap top__inner">
       <a class="brand" href="index.html" aria-label="Nelson Lord home">
         <img src="assets/logo.svg" alt="Nelson Lord" class="brand__mark" />
-        <span class="brand__text">
+        <span class="brand__word">
           <span class="brand__name">Nelson Lord</span>
-          <span class="brand__sub">Partners</span>
+          <span class="brand__sub">Long-term owners</span>
         </span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav__icon" aria-hidden="true"></span>
-          <span class="sr-only">Open menu</span>
-        </button>
-
-        <div class="nav__menu" id="navMenu">
-          <a class="nav__link" href="owners.html">For owners</a>
-          <a class="nav__link" href="process.html">Confidentiality</a>
-          <a class="nav__link" href="advisors.html">For advisors</a>
-          <a class="nav__link nav__link--active" href="privacy.html">Privacy</a>
-          <a class="nav__link nav__link--pill" href="index.html#contact">Contact</a>
-        </div>
+        <a class="nav__link" href="owners.html">For owners</a>
+        <a class="nav__link nav__link--active" href="confidentiality.html">Confidentiality</a>
+        <a class="nav__link" href="privacy.html">Privacy</a>
+        <a class="nav__link nav__link--cta" href="index.html#contact">Contact</a>
       </nav>
+
+      <button class="menu" type="button" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu__lines" aria-hidden="true"></span>
+        <span class="sr">Menu</span>
+      </button>
+    </div>
+
+    <div class="menuPanel" id="menuPanel" hidden>
+      <div class="wrap menuPanel__inner">
+        <a class="menuPanel__link" href="owners.html">For owners</a>
+        <a class="menuPanel__link" href="confidentiality.html">Confidentiality</a>
+        <a class="menuPanel__link" href="privacy.html">Privacy</a>
+        <a class="menuPanel__link" href="index.html#contact">Contact</a>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="pageHero">
-      <div class="container">
-        <p class="eyebrow">Privacy</p>
-        <h1 class="h1">Privacy, in plain English.</h1>
+      <div class="wrap">
+        <p class="kicker">Confidentiality</p>
+        <h1 class="h1">Confidentiality is non-negotiable.</h1>
         <p class="lead">
-          We keep your information private and controlled.
-          We use it only for sensible reasons, and we do not sell it.
+          We understand how sensitive this can be.
+          We keep conversations private and controlled.
+          Nothing moves without your agreement.
         </p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid grid--2">
-        <div class="panel reveal">
-          <div class="badge">What we collect</div>
-          <ul class="ticks">
-            <li>Your name and contact details</li>
-            <li>Information you choose to share about your business</li>
-            <li>Basic technical data like browser type and page visits</li>
-          </ul>
-          <p class="muted">
-            We only collect what we need to respond properly.
-          </p>
-        </div>
+      <div class="wrap">
+        <div class="grid grid--2">
+          <div class="card">
+            <h2 class="h2">Our commitments</h2>
+            <ul class="list">
+              <li>No contact with staff, customers, or suppliers without your approval</li>
+              <li>No sharing information beyond what is appropriate</li>
+              <li>Specialists involved only when needed</li>
+              <li>Calm, proportionate steps</li>
+              <li>Minimal disruption</li>
+            </ul>
+          </div>
 
-        <div class="panel reveal">
-          <div class="badge">How we use it</div>
-          <ul class="ticks">
-            <li>To reply to your enquiry</li>
-            <li>To arrange a call or meeting</li>
-            <li>To keep a private record of conversations</li>
-            <li>To improve the website experience</li>
-          </ul>
-          <p class="muted">
-            We do not use your information for spam or unwanted marketing.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--tint">
-      <div class="container grid grid--2">
-        <div class="panel reveal">
-          <div class="badge">Who we share it with</div>
-          <p class="muted">
-            We keep sharing to a minimum. Sometimes, we may share information with trusted professionals who help us operate,
-            such as legal or accounting support, but only when it is appropriate and on a need-to-know basis.
-          </p>
-          <p class="muted">
-            We do not sell your information. We do not share it with advertisers.
-          </p>
-        </div>
-
-        <div class="panel reveal">
-          <div class="badge">Your rights</div>
-          <ul class="ticks">
-            <li>You can ask what information we hold about you</li>
-            <li>You can ask us to correct it</li>
-            <li>You can ask us to delete it where appropriate</li>
-            <li>You can ask us to stop using it in certain ways</li>
-          </ul>
-          <p class="muted">
-            If you want to do any of this, email <a class="inline" href="mailto:info@nelsonlord.co.uk">info@nelsonlord.co.uk</a>.
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="soft reveal">
-          <div class="soft__inner">
-            <div>
-              <div class="badge">A simple promise</div>
-              <p class="soft__title">We treat your information like we would want ours treated.</p>
-              <p class="muted">Private, controlled, and used only for the right reasons.</p>
-            </div>
-            <a class="btn btn--primary" href="index.html#contact">Contact</a>
+          <div class="card">
+            <h2 class="h2">A simple process</h2>
+            <ol class="olist">
+              <li><strong>First call</strong> to understand timing and fit</li>
+              <li><strong>Light review</strong> only if there is genuine fit</li>
+              <li><strong>Second conversation</strong> to talk properly and plan the transition</li>
+              <li><strong>Confirm and complete</strong> with care and control</li>
+            </ol>
+            <p class="small">We keep it proportionate. We avoid unnecessary heaviness.</p>
           </div>
         </div>
+
+        <div class="banner">
+          <div class="banner__left">
+            <div class="banner__k">Owner-first</div>
+            <div class="banner__t">This stays owner-led and controlled.</div>
+            <div class="banner__d">No surprises. No games. No noise.</div>
+          </div>
+          <a class="btn btn--primary" href="index.html#contact">Start confidentially</a>
+        </div>
       </div>
     </section>
 
-    <footer class="footer footer--mini">
-      <div class="container footer__inner">
+    <footer class="footer" aria-label="Footer">
+      <div class="wrap footer__inner">
         <div class="footer__left">
-          <p class="footer__brand">Nelson Lord Partners</p>
-          <p class="footer__muted">Long-term stewardship for established service businesses.</p>
+          <div class="footer__brand">Nelson Lord</div>
+          <div class="footer__sub">A long-term home for established service businesses.</div>
         </div>
         <div class="footer__right">
-          <a class="footer__link" href="index.html">Home</a>
-          <a class="footer__link" href="owners.html">For owners</a>
-          <a class="footer__link" href="process.html">Confidentiality</a>
-          <a class="footer__link" href="advisors.html">For advisors</a>
+          <a href="index.html">Home</a>
+          <a href="owners.html">For owners</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
-      <div class="container footer__bottom">
-        <p class="footer__muted">© <span id="year"></span> Nelson Lord.</p>
+      <div class="wrap footer__bottom">
+        <div>© <span id="year"></span> Nelson Lord.</div>
       </div>
     </footer>
   </main>
